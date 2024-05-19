@@ -9,7 +9,11 @@ public class UserResource {
 
   private UserDaoService service;
 
-  public List<User> retrieveAllUsers() {
-
+  public UserResource(UserDaoService service) {
+    this.service = service;
   }
+
+//  public List<User> retrieveAllUsers() {
+//    return service.findAll();
+//  }
 }
